@@ -1,16 +1,17 @@
 html {
-    background-color: #eee;
+    background-color: #555;
     font: 13px Helmet, Freesans, sans-serif;
 }
 
 .allcontent {
-     max-width: 700px;
-     margin: auto;
-     background-color: #ccc;
+    max-width: 700px;
+    margin: auto;
+    overflow: auto;
+    width: 100%
 }
 
 .maincontent {
-    width: 65%;
+    width: 70%;
     float: left;
 }
 
@@ -19,21 +20,49 @@ html {
     float: right;
 }
 
-article, header {
+header, footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #b26208;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+article, aside {
     background-color: #fff;
     border-radius: 5px;
-    padding: 10px;
     margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #444;
+    margin-right: 4px;
+    margin-left: 4px;
 }
 
-header, footer{
-    text-align: center;
+div.navcontainer {
+    height: 40px;
+    margin: auto;
+    background-color: #cccccc;
+    margin-bottom: 8px;
 }
 
-article {
-    box-shadow: 2px 2px 5px #000;
+nav.navexternal {
+    max-width: 700px;
+    margin: auto;
+    overflow: auto;
+    width: 100%;
 }
 
-nav .navexternal{
+nav.navexternal ul li{
+    float: left;
+    display: inline;
+    padding: 0 10px;
+    background-color: #b26208;
+    margin: 0 4px;
+    height: 40px;
+    border-radius: 5px;
+}
 
+nav.navexternal ul li.right{
+    float: right;
 }
